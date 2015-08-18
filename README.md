@@ -6,7 +6,7 @@ The timeout configuration will only work with a customized version of Sandbox, a
 
 ## Getting Started
 
-Just start the custom [Sandbox](https://getsandbox.com) platform setting the base dir to the root of this repository.
+Just start [Sandbox](https://getsandbox.com) setting the base dir to the root of this repository.
 
 ## Route configuration
 
