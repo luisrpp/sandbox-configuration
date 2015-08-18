@@ -13,7 +13,7 @@ Just start [Sandbox](https://getsandbox.com) setting the base dir to the root of
 Use `routes.define` instead of `Sandbox.define`:
 
 ```javascript
-var routes = require("../configuration/decorators.js")
+var routes = require("../configuration/decorators.js");
 var failures = require("../configuration/failures.js");
 
 // A basic route returning a canned response
