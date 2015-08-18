@@ -1,9 +1,12 @@
 {
   "name": "sandbox-configuration",
   "version": "0.1-SNAPSHOT",
-  "description": "Sandbox-configuration",
+  "description": "Sandbox-configuration is an extention to the Sandbox platform that allows you to control the timeouts and failures of your routes.",
+  "author": "Luis Roberto Pereira de Paula <luisrpp@gmail.com>",
+  "contributors": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/luisrpp/sandbox-configuration.git"
-  }
+  },
+  "license": "MIT"
 }
