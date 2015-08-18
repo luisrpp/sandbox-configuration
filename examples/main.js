@@ -3,12 +3,12 @@
  * 
  */
 
-var routes = require("../configuration/decorators.js")
+var routes = require("../configuration/decorators.js");
 var failures = require("../configuration/failures.js");
 
 var configModel = require("../configuration/model.js");
 var MockConfiguration = configModel.MockConfiguration;
-
+T
 // Set initial mock configuration
 var testMockConfiguration = function(route, method) {
     var mockConfig = new MockConfiguration(0, 100, 0);
