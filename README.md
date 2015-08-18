@@ -9,10 +9,7 @@ The timeout configuration will only work with a customized version of Sandbox, a
 
 The route configuration can be defined on your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/configuration](http://localhost:8080/configuration):
 
-![Sandbox mock configuration](https://raw.githubusercontent.com/luisrpp/sandbox-configuration/master/images/configuration.png)
-
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
+![Sandbox mock configuration screenshot](https://raw.githubusercontent.com/luisrpp/sandbox-configuration/master/images/configuration.png)
 
 ## License
 
