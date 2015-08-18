@@ -1,7 +1,7 @@
 {
   "name": "sandbox-configuration",
   "version": "0.1-SNAPSHOT",
-  "description": "Sandbox-configuration is an extention to the Sandbox platform that allows you to control the timeouts and failures of your routes.",
+  "description": "Sandbox-configuration is an extention to the Sandbox Runtime that allows you to control the timeouts and failures of your routes.",
   "author": "Luis Roberto Pereira de Paula <luisrpp@gmail.com>",
   "contributors": [],
   "repository": {
