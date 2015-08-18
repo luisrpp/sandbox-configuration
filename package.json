@@ -1,0 +1,9 @@
+{
+  "name": "sandbox-configuration",
+  "version": "0.1-SNAPSHOT",
+  "description": "Sandbox-configuration",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/luisrpp/sandbox-configuration.git"
+  }
+}
