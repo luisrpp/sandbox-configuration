@@ -8,6 +8,28 @@ The timeout configuration will only work with a customized version of Sandbox, a
 
 Just start [Sandbox](https://getsandbox.com) setting the base dir to the root of this repository.
 
+## Route definition
+
+Use `routes.define` instead of `Sandbox.define`:
+
+```javascript
+var routes = require("../configuration/decorators.js")
+var failures = require("../configuration/failures.js");
+
+// A basic route returning a canned response
+routes.define('/test', 'GET', function(req, res) {
+    try {
+        failures.activate(req, function() {
+            throw { message: "Some error" };
+        });
+
+        res.send('Hello world');
+    } catch (e) {
+        res.send(e.message);
+    }
+});
+```
+
 ## Route configuration
 
 The route configuration can be defined on your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/configuration](http://localhost:8080/configuration):
