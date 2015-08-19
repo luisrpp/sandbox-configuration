@@ -5,8 +5,8 @@
 
 var routes = require("../configuration/decorators.js");
 var failures = require("../configuration/failures.js");
-
 var configModel = require("../configuration/model.js");
+
 var MockConfiguration = configModel.MockConfiguration;
 
 // A basic route returning a canned response
