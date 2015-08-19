@@ -3,7 +3,7 @@
  * 
  */
 
-var routes = require("../configuration/decorators.js")
+var routes = require("../configuration/decorators.js");
 var failures = require("../configuration/failures.js");
 
 var configModel = require("../configuration/model.js");
