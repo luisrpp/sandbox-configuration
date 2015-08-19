@@ -9,12 +9,6 @@ var failures = require("../configuration/failures.js");
 var configModel = require("../configuration/model.js");
 var MockConfiguration = configModel.MockConfiguration;
 
-// Set initial mock configuration
-var testMockConfiguration = function(route, method) {
-    var mockConfig = new MockConfiguration(0, 100, 0);
-    configModel.saveCustomRoute(route, method, mockConfig);
-}
-
 // A basic route returning a canned response
 routes.define('/test', 'GET', function(req, res) {
     try {
@@ -26,4 +20,4 @@ routes.define('/test', 'GET', function(req, res) {
     } catch (e) {
         res.send(e.message);
     }
-}, testMockConfiguration);
+}, new MockConfiguration(2000, 50, 0));
