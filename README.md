@@ -23,7 +23,7 @@ routes.define('/test', 'GET', function(req, res) {
 
 ## Routes configuration
 
-The route configuration can be defined in your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/configuration](http://localhost:8080/admin):
+The route configuration can be defined in your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/admin](http://localhost:8080/admin):
 
 ![Sandbox mock configuration screenshot](https://raw.githubusercontent.com/luisrpp/sandbox-configuration/master/images/configuration.png)
 
