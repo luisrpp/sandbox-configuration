@@ -8,6 +8,5 @@
 var view = require("./view.js");
 
 
-Sandbox.define('/configuration', 'GET', view.get);
-
-Sandbox.define('/configuration', 'POST', view.post);
+Sandbox.define('/admin', 'GET', view.get);
+Sandbox.define('/admin', 'POST', view.post);

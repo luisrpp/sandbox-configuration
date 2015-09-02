@@ -15,21 +15,15 @@ Use `routes.define` instead of `Sandbox.define`:
 ```javascript
 // A basic route returning a canned response
 routes.define('/test', 'GET', function(req, res) {
-    try {
-        failures.activate(req, function() {
-            throw { message: "Some error" };
-        });
 
-        res.send('Hello world');
-    } catch (e) {
-        res.send(e.message);
-    }
+    res.send('Hello world');
+
 }, new MockConfiguration(2000, 50, 0));
 ```
 
 ## Routes configuration
 
-The route configuration can be defined in your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/configuration](http://localhost:8080/configuration):
+The route configuration can be defined in your code (there is an example in the source code), or at runtime via the url [http://localhost:8080/configuration](http://localhost:8080/admin):
 
 ![Sandbox mock configuration screenshot](https://raw.githubusercontent.com/luisrpp/sandbox-configuration/master/images/configuration.png)
 

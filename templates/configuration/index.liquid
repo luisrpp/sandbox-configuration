@@ -41,7 +41,7 @@
           <pre id="currentGlobalConfiguration">{{ res.globalConfig }}</pre>
         </div>
         <div class="col-md-6">
-          <form method="POST" action="/configuration">
+          <form method="POST" action="/admin">
             <input type="hidden" name="configType" value="GLOBAL">
             <div class="form-group">
               <label for="globalConfiguration">New configuration:</label>
@@ -62,7 +62,7 @@
           <pre id="currentCustomConfiguration">{{ res.customConfig }}</pre>
         </div>
         <div class="col-md-6">
-          <form method="POST" action="/configuration">
+          <form method="POST" action="/admin">
             <input type="hidden" name="configType" value="CUSTOM">
             <div class="form-group">
               <label for="customConfiguration">New configuration:</label>
@@ -80,12 +80,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      $( "#copyGlobal" ).click(function() {
+      $("#copyGlobal").click(function() {
         $( "textarea#globalConfiguration" ).val( $( "#currentGlobalConfiguration" ).text() );
       });
-      $( "#copyCustom" ).click(function() {
+
+      $("#copyCustom").click(function() {
         $( "textarea#customConfiguration" ).val( $( "#currentCustomConfiguration" ).text() );
       });
+      
+      var numLinesGlobal = $('#currentGlobalConfiguration').html().split(/\n/).length;
+      if (numLinesGlobal > 5) {
+        $('#globalConfiguration').attr('rows', numLinesGlobal);
+      }
+
+      var numLinesCustom = $('#currentCustomConfiguration').html().split(/\n/).length;
+      if (numLinesCustom > 5) {
+        $('#customConfiguration').attr('rows', numLinesCustom);
+      }
     </script>
   </body>
 </html>
