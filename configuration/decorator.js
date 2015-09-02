@@ -1,5 +1,5 @@
 /**
- * Config decorators
+ * Config decorator
  * 
  * @author Luis Roberto Pereira de Paula
  * @since 0.1
