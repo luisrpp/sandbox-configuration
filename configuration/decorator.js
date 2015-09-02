@@ -23,7 +23,7 @@ exports.define = function(route, method, viewFunction, mockConfiguration) {
             _applyAction(req, _fail);
 
             // Applies a timeout on the request based on the mock configuration.
-            _applyAction(req, _wait);
+            _applyAction(req, _sleep);
 
             viewFunction(req, res);
         } catch (e) {
@@ -52,7 +52,7 @@ var _fail = function(req, config, rand) {
     }
 }
 
-var _wait = function(req, config, rand) {
+var _sleep = function(req, config, rand) {
     var timeoutPercentage = config.timeoutPercentage;
 
     if (timeoutPercentage > rand) {
